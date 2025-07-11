@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/img/icon/idea.ico" type="image/x-icon">
+    <!-- //<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Genius</title>
+</head>
+<body>
+    <body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4">
+
+    <div class="text-center mb-8">
+        <h1 class="text-4xl md:text-5xl font-bold text-yellow-300 tracking-wider">GENIUS</h1>
+        <p class="text-gray-400 mt-2">Teste sua memória</p>
+    </div>
+
+    <div class="relative w-[320px] h-[320px] md:w-[400px] md:h-[400px]">
+        <!-- Botões do Jogo -->
+        <div class="grid grid-cols-2 grid-rows-2 w-full h-full gap-2">
+            <div id="button-0" class="genius-button bg-green-600 top-left cursor-pointer" data-color="0"></div>
+            <div id="button-1" class="genius-button bg-red-600 top-right cursor-pointer" data-color="1"></div>
+            <div id="button-2" class="genius-button bg-yellow-600 bottom-left cursor-pointer" data-color="2"></div>
+            <div id="button-3" class="genius-button bg-blue-600 bottom-right cursor-pointer" data-color="3"></div>
+        </div>
+
+        <!-- Painel Central -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="bg-gray-800 w-36 h-36 md:w-44 md:h-44 rounded-full flex flex-col items-center justify-center border-8 border-gray-900 shadow-2xl">
+                <div id="score" class="text-4xl font-bold text-white">--</div>
+                <div id="status" class="text-xs text-gray-400 mt-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-8 text-center">
+        <button id="startButton" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            Iniciar
+        </button>
+        <div id="message" class="mt-4 h-6 text-lg text-red-500 font-bold"></div>
+    </div>
+
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://unpkg.com/tone"></script>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>

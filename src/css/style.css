@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    touch-action: manipulation; /* Desativa o zoom por duplo toque em dispositivos móveis */
+}
+
+.genius-button {
+    transition:  all 0.1s ease-in-out;
+}
+
+.genius-button.lit {
+    filter: brightness(2);
+    box-shadow: 0 0 20px 5px currentColor;
+}
+
+.top-left {
+    border-radius: 100% 0 0 0;
+}
+
+.top-right {
+    border-radius: 0 100% 0 0;
+}
+
+.bottom-left {
+    border-radius: 0 0 0 100%;
+}
+
+.bottom-right {
+    border-radius: 0 0 100% 0;
+}
